@@ -1,9 +1,8 @@
 const {config} = require('./wdio.shared.conf')
 require('dotenv').config()
 
-config.user = 'victorpapuc_WhzVyu'
-config.key = 'wPYhNmvPPsZqzqcM7Kyk'
-
+config.user= process.env.BROWSERSTACK_USER;
+config.key= process.env.BROWSERSTACK_KEY;
 
 config.specs = [
     './test/specs/**/*.js'
