@@ -1,0 +1,35 @@
+{
+  "name": "webdriveio-appium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:android": "npx wdio config/wdio.android.conf.js",
+    "test:ios": "npx wdio config/wdio.ios.conf.js",
+    "test:browserstack": "npx wdio config/wdio.android.bs.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.19.5",
+    "appium": "^1.22.3",
+    "appium-flutter-driver": "^1.0.1",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.7",
+    "@wdio/appium-service": "^7.19.5",
+    "@wdio/browserstack-service": "^7.19.5",
+    "@wdio/local-runner": "^7.19.5",
+    "@wdio/mocha-framework": "^7.19.5",
+    "@wdio/spec-reporter": "^7.19.5",
+    "appium-uiautomator2-driver": "^2.0.7",
+    "appium-xcuitest-driver": "^4.4.0",
+    "eslint": "^8.13.0",
+    "eslint-plugin-wdio": "^7.19.4"
+  }
+}
